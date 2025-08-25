@@ -1,0 +1,34 @@
+add_executable(image_processor
+        image_processor.cpp
+        image/image.cpp
+        image/color.cpp
+        image/utils.cpp
+        filters/crop_filter.cpp
+        filters/grayscale_filter.cpp
+        filters/negative_filter.cpp
+        filters/sharpening_filter.cpp
+        filters/edge_detection_filter.cpp
+        filters/gaussian_blur_filter.cpp
+        filters/custom_filter.cpp
+        reading_and_writing/reader.cpp
+        reading_and_writing/writer.cpp
+)
+
+add_executable(run_tests
+        unit_tests/run_tests.cpp
+        unit_tests/test_image.cpp
+        unit_tests/test_filters.cpp
+        unit_tests/test_reading_writing.cpp
+        image/image.cpp
+        image/color.cpp
+        image/utils.cpp
+        filters/crop_filter.cpp
+        filters/grayscale_filter.cpp
+        filters/negative_filter.cpp
+        filters/sharpening_filter.cpp
+        filters/edge_detection_filter.cpp
+        filters/gaussian_blur_filter.cpp
+        filters/custom_filter.cpp
+        reading_and_writing/reader.cpp
+        reading_and_writing/writer.cpp
+)
